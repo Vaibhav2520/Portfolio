@@ -1,0 +1,59 @@
+.div-container {
+  background-color: bisque;
+  
+}
+
+.skill-container {
+  margin-top: 10px;
+  margin: 0 auto;
+  height: 20rem;
+}
+
+.skill-container .skill-item {
+  display: flex;
+  justify-content: center;
+  height: 2rem;
+}
+.skill-container .skill-item .button-skill {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  width: 150px;
+  height: 100px;
+  background-color: #fff;
+  color: #000;
+}
+.skill-container .skill-item .button-skill:hover {
+  box-shadow: 10px 10px 5px grey;
+}
+
+@media only screen and (max-width: 480px) {
+    .div-container {
+        background-color: bisque;
+        
+      }
+      
+      .skill-container {
+        margin-top: 10px;
+        margin: 0 auto;
+        height: 500px;
+      }
+      
+      .skill-container .skill-item {
+        display: flex;
+        justify-content: center;
+        height: 2rem;
+      }
+      .skill-container .skill-item .button-skill {
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        width: 150px;
+        height: 100px;
+        background-color: #fff;
+        color: #000;
+      }
+      .skill-container .skill-item .button-skill:hover {
+        box-shadow: 10px 10px 5px grey;
+      }
+}

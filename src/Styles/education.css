@@ -1,0 +1,8 @@
+.education-container{
+    justify-content:space-evenly;
+    
+}
+.education-container .education-info{
+    display: flex;
+    flex-direction: column;
+}
