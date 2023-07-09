@@ -11,7 +11,7 @@ import Title from "../Components/title";
 
 function Experince() {
   return (
-    <div style={{backgroundColor:'bisque'}}>
+    <div style={{backgroundColor:'bisque'}} id='experience'>
       <Title text="Experince" />
       <VerticalTimeline>
         <VerticalTimelineElement

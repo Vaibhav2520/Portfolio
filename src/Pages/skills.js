@@ -3,6 +3,7 @@ import React from "react";
 import Title from "../Components/title";
 import "../Styles/skill.css";
 import "boxicons";
+import Jump from 'react-reveal/Jump';
 
 function Skills() {
   const skillsList = [
@@ -40,19 +41,23 @@ function Skills() {
     },
   ];
   return (
-    <div className="div-container">
+    
+    <div className="div-container" id="skills">
       <Title text="Skills" />
       <Grid container xs={12} md={6} sm={12} className="skill-container" justifyContent='space-around'>
         {skillsList.map((skill) => (
           <Grid item xs={6} md={3} sm={3} className="skill-item">
+             <Jump>
             <Button variant="contained" className="button-skill">
               <box-icon type="logo" name={skill.logo} size="lg"></box-icon>
               {skill.name}
             </Button>
+        </Jump>
           </Grid>
         ))}
       </Grid>
     </div>
+
   );
 }
 

@@ -9,8 +9,9 @@
   align-items: center;
 }
 .main-container {
-  height: 52rem;
+  /* height: 52rem; */
   background-color: bisque;
+  padding-bottom: 10rem;
 }
 
 .home-container .intro-section {
@@ -54,7 +55,8 @@
         align-items: center;
       }
       .main-container {
-        height: 50rem;
+
+        /* height: 50rem; */
         width: 100%;
         background-color: bisque;
       }

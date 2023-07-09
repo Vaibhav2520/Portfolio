@@ -1,4 +1,3 @@
-
 import "../Styles/home.css";
 import Button from "@mui/material/Button";
 import { Grid } from "@mui/material";
@@ -10,6 +9,8 @@ import About from "./about";
 import Skills from "./skills";
 import Education from "./education";
 import Experince from "./experince";
+import Slide from "react-reveal/Slide";
+import Fade from "react-reveal/Fade";
 
 function Home() {
   const socialList = [
@@ -35,13 +36,21 @@ function Home() {
       <div>
         <Grid container className="main-container">
           <Grid item>
-            <div className="home-container">
+            <div className="home-container" id="home">
               <div className="intro-section">
                 <p>
-                  Hi I'm <span className="dark-color">Vaibhav Sulakhe </span>
+                  Hi I'm{" "}
+                  <span className="dark-color">
+                    <Slide right>Vaibhav Sulakhe</Slide>{" "}
+                  </span>
                 </p>
                 <p>Software Engineer</p>
-                <Button variant="contained" className="resume-button">
+                <Button
+                  variant="contained"
+                  className="resume-button"
+                  href="https://drive.google.com/file/d/1nYQIxkV-f1LMa7xoh8iuzkG2OAzz8N4-/view?usp=drive_link"
+                  target='_blank'
+                >
                   RESUME
                 </Button>
                 <Grid container xs={12} md={6} className="social-container">
@@ -57,11 +66,19 @@ function Home() {
             </div>
           </Grid>
           <Grid item className="cover-container">
-            <img src={coverimg} alt="coverphoto"  className='width-container'/>
+            <Fade top>
+              <img
+                src={coverimg}
+                alt="coverphoto"
+                className="width-container"
+              />
+            </Fade>
           </Grid>
         </Grid>
         <About />
+
         <Skills />
+
         <Education />
         <Experince />
       </div>
